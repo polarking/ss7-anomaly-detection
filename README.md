@@ -1,12 +1,22 @@
 # SS7 Anomaly Detection
-Anomaly detection for the SS7 Attack Simulator using the ELK stack, Apache
-Kafka, and Apache Spark.
+Anomaly detection for the [SS7 Attack
+Simulator](https://github.com/polarking/jss7-attack-simulator) using the ELK
+stack, Apache Kafka, and Apache Spark.
 
-This project merges together each component required to run the SS7 Attack
+This project merge together each component required to run the SS7 Attack
 Simulator and analysis its generated traffic using Apache Spark.
 
+This project is part of a master thesis currently being done at NTNU Gjøvik,
+Norway.
+
 ## Instructions
-Please see the individual subprojects for how to run each individual project.
+Clone the project using git:
+```bash
+git clone --recursive https://github.com/polarking/ss7-anomaly-detection
+```
+
+Please see the individual subproject's README.md for how to compile and run
+each individual project.
 
 1. Make sure Elasticsearch and Apache Kafka is running on localhost.
 2. Create the Kafka topics *ss7-raw-input* and *ss7-preprocessed*, 
